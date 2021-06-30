@@ -3,7 +3,7 @@ using Android.OS;
 using Android.Runtime;
 using AndroidX.AppCompat.App;
 
-namespace HomeStation
+namespace HomeStation.Activities
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
