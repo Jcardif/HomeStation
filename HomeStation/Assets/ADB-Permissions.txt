@@ -1,0 +1,5 @@
+﻿adb shell pm grant com.companyname.homestation com.google.android.things.permission.USE_PERIPHERAL_IO
+adb shell pm grant com.companyname.homestation com.google.android.things.permission.MANAGE_SENSOR_DRIVERS
+adb shell pm grant com.companyname.homestation com.google.android.things.permission.MANAGE_INPUT_DRIVERS
+adb shell pm grant com.companyname.homestation android.permission.ACCESS_NETWORK_STATE
+adb shell pm grant com.companyname.homestation android.permission.INTERNET
