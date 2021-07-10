@@ -124,6 +124,12 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\ADB-Permissions.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HomeStation.IoTCentral\HomeStation.IoTCentral.csproj">
+      <Project>{8ff9ae61-b4c9-40ff-9130-de964681039d}</Project>
+      <Name>HomeStation.IoTCentral</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.

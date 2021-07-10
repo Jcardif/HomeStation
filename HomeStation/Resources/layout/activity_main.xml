@@ -16,11 +16,12 @@
 		android:textColor="@color/colorPrimary"
 		android:padding="8dp"/>
 	<TableLayout
-		android:layout_width="match_parent"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:padding="6dp"
+        android:id="@+id/data_table"
 		android:layout_below="@id/title_text"
-		android:layout_centerInParent="true"
+		android:layout_alignParentLeft="true"
 		android:layout_margin="8dp">
         <TableRow
             android:layout_width="match_parent"
@@ -65,5 +66,16 @@
                 android:padding="8dp"/>
         </TableRow>
 	</TableLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/data_table"
+        android:layout_alignBottom="@id/data_table"
+        android:id="@+id/weather_image"
+        android:layout_margin="14dp"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:contentDescription="description" />
 
 </RelativeLayout>
