@@ -32,9 +32,9 @@ namespace HomeStation.Simulator
         static double optimalPressure = 700;          // Setting - can be changed by the operator from IoT Central.
 
         // User IDs.
-        static string IDScope = "";
-        static string DeviceID = "";
-        static string PrimaryKey = "";
+        private static string idScope = "0ne0032EC78";
+        private static string deviceId = "6gl2txiyd9";
+        private static string primaryKey = "CoShaJtXGn5v+FGbUVThnVerO4JiDFfN8cy3nqW7R9g=";
 
         // IoT Central global variables.
         static DeviceClient s_deviceClient;
@@ -46,7 +46,7 @@ namespace HomeStation.Simulator
         {
             try
             {
-                using (var security = new SecurityProviderSymmetricKey(DeviceID, PrimaryKey, null))
+                using (var security = new SecurityProviderSymmetricKey(deviceId, primaryKey, null))
                 {
                     DeviceRegistrationResult result = RegisterDeviceAsync(security).GetAwaiter().GetResult();
                     if (result.Status != ProvisioningRegistrationStatusType.Assigned)
@@ -111,7 +111,7 @@ namespace HomeStation.Simulator
 
         static string GetButtonTap(Random rand)
         {
-            
+
             var tap = rand.Next(0, 3);
             switch (tap)
             {
@@ -247,7 +247,7 @@ namespace HomeStation.Simulator
             using (var transport = new ProvisioningTransportHandlerMqtt(TransportFallbackType.TcpOnly))
             {
                 ProvisioningDeviceClient provClient =
-                    ProvisioningDeviceClient.Create(GlobalDeviceEndpoint, IDScope, security, transport);
+                    ProvisioningDeviceClient.Create(GlobalDeviceEndpoint, idScope, security, transport);
 
                 Console.WriteLine($"RegistrationID = {security.GetRegistrationID()}");
 

@@ -6,23 +6,119 @@
     android:layout_height="match_parent"
     tools:showIn="@layout/activity_main">
 
-	<TextView
-		android:text="@string/app_name"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
-		android:textSize="24sp"
-		android:id="@+id/title_text"
-		android:textColor="@color/colorPrimary"
-		android:padding="8dp"/>
-	<TableLayout
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:padding="6dp"
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:id="@+id/title_text"
+        android:textColor="@color/colorPrimary"
+        android:padding="8dp"/>
+
+    <TextView
+        android:text="Device Properties"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="24sp"
+        android:id="@+id/title2_text"
+        android:layout_below="@id/title_text"
+        android:textColor="#F32196"
+        android:layout_marginLeft="16dp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:id="@+id/properties_table"
+        android:layout_below="@id/title2_text"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Optimal Pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                android:padding="8dp"/>
+            <TextView
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:id="@+id/optimalPressureValue"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Optimal Temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                android:padding="8dp"/>
+            <TextView
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:id="@+id/optimalTempValue"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="ATK ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                android:padding="8dp"/>
+            <TextView
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:id="@+id/atkIdValue"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:text="Device Telemetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="24sp"
+        android:id="@+id/title3_text"
+        android:layout_below="@id/properties_table"
+        android:textColor="#F32196"
+        android:layout_marginLeft="16dp"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
         android:id="@+id/data_table"
-		android:layout_below="@id/title_text"
-		android:layout_alignParentLeft="true"
-		android:layout_margin="8dp">
+        android:layout_below="@id/title3_text"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="8dp">
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -35,8 +131,7 @@
                 android:textColor="@color/colorPrimary"
                 android:padding="8dp"/>
             <TextView
-                android:text="Value"
-                android:layout_width="wrap_content"
+	            android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:textSize="24sp"
@@ -56,8 +151,7 @@
                 android:textColor="@color/colorPrimary"
                 android:padding="8dp"/>
             <TextView
-                android:text="Value"
-                android:layout_width="wrap_content"
+	            android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:textSize="24sp"
@@ -65,7 +159,50 @@
                 android:textColor="@android:color/black"
                 android:padding="8dp"/>
         </TableRow>
-	</TableLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Button Tap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                android:padding="8dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="24sp"
+                android:id="@+id/buttonTapValue"
+                android:textColor="@android:color/black"
+                android:padding="8dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:text="Received Display Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:id="@+id/title4_text"
+        android:layout_toRightOf="@id/title2_text"
+        android:layout_below="@id/title_text"
+        android:textColor="#F32196"
+        android:layout_marginLeft="200dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/receivedMessage_text"
+        android:layout_toRightOf="@id/title2_text"
+        android:layout_below="@id/title4_text"
+        android:textColor="#212DF3"
+        android:layout_marginLeft="200dp" />
+
 
     <ImageView
         android:layout_width="wrap_content"

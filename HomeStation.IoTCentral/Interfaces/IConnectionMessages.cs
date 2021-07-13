@@ -11,5 +11,7 @@ namespace HomeStation.IoTCentral.Interfaces
         void OnFlashLedsCmdReceived(int[] leds, int flashTimes);
         void OnDisplayMessageCmdReceived(string message);
         void OnTakePhotoCmdReceived();
+        void OnOptimalTemperatureReceived(double temperature);
+        void OnOptimalPressureReceived(double pressure);
     }
 }

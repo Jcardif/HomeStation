@@ -17,6 +17,7 @@ namespace HomeStation.IoTCentral.Helpers
         Information,
         Warning,
         Error,
-        Message
+        Message,
+        Text
     }
 }

@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeStation", "HomeStation\HomeStation.csproj", "{CC175009-407C-487B-956F-2E513043066C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeStation.IoTCentral", "HomeStation.IoTCentral\HomeStation.IoTCentral.csproj", "{8FF9AE61-B4C9-40FF-9130-DE964681039D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeStation.Simulator", "HomeStation.Simulator\HomeStation.Simulator.csproj", "{D4D1F8FE-47BA-4132-8158-8AACE8704CE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeStation.Simulator", "HomeStation.Simulator\HomeStation.Simulator.csproj", "{D4D1F8FE-47BA-4132-8158-8AACE8704CE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeStation.IoTCentral", "HomeStation.IoTCentral\HomeStation.IoTCentral.csproj", "{058D119F-02F9-4401-96F9-ADFABC25DE09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,14 +21,14 @@ Global
 		{CC175009-407C-487B-956F-2E513043066C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC175009-407C-487B-956F-2E513043066C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CC175009-407C-487B-956F-2E513043066C}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{8FF9AE61-B4C9-40FF-9130-DE964681039D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FF9AE61-B4C9-40FF-9130-DE964681039D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FF9AE61-B4C9-40FF-9130-DE964681039D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FF9AE61-B4C9-40FF-9130-DE964681039D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4D1F8FE-47BA-4132-8158-8AACE8704CE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4D1F8FE-47BA-4132-8158-8AACE8704CE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4D1F8FE-47BA-4132-8158-8AACE8704CE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4D1F8FE-47BA-4132-8158-8AACE8704CE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{058D119F-02F9-4401-96F9-ADFABC25DE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{058D119F-02F9-4401-96F9-ADFABC25DE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{058D119F-02F9-4401-96F9-ADFABC25DE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{058D119F-02F9-4401-96F9-ADFABC25DE09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

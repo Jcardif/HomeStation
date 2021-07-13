@@ -38,6 +38,7 @@
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
     <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -51,6 +52,7 @@
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -64,6 +66,7 @@
     <Compile Include="Helpers\BoardDefaults.cs" />
     <Compile Include="Helpers\DynamicSensorCallback.cs" />
     <Compile Include="Helpers\SensorEventListener.cs" />
+    <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Interfaces\ISensorCallback.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -126,7 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HomeStation.IoTCentral\HomeStation.IoTCentral.csproj">
-      <Project>{8ff9ae61-b4c9-40ff-9130-de964681039d}</Project>
+      <Project>{058d119f-02f9-4401-96f9-adfabc25de09}</Project>
       <Name>HomeStation.IoTCentral</Name>
     </ProjectReference>
   </ItemGroup>
